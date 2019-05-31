@@ -52,9 +52,6 @@ if ( config.configuracion.assets.slick == 1 ) {
 if ( config.configuracion.assets.matchHeight == 1 ) {
     assetsAPPJS.push(nodepath + 'jquery-match-height/dist/jquery.matchHeight-min.js');
 }
-if ( config.configuracion.particlesFooter == 1 ) {
-    assetsAPPJS.push(nodepath + 'particles.js/particles.js');
-}
 
 /**
  * Genera el archivo principal de styles a partir de Less

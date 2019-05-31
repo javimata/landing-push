@@ -7,9 +7,8 @@
 	
 	$(document).ready(function(){
 
-		var jam_gotop = $('body').data("gotop");
-		var jam_popup = $('body').data("popup");
-		var jam_particlesFooter = $('body').data("particlesFooter");
+		var jam_gotop     = $('body').data("gotop");
+		var jam_popup     = $('body').data("popup");
 		
 		var alto = $('section#header').height();
 		$(window).resize(function(){
@@ -185,11 +184,6 @@
 				$("html, body").animate({scrollTop:0},600);
 				return false;
 			});
-		};
-
-
-		if ( jam_particlesFooter == 1 ) {
-			particlesJS.load('particles-footer', 'assets/particlesfooter-config.json', function () { });
 		};
 
 

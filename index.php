@@ -86,10 +86,10 @@ $config = getConfig();
 		<?php endif ?>
 
 	</head>
-	<body data-gotop="<?php echo $config->configuracion->gotop; ?>" data-popup="<?php echo $config->configuracion->popup; ?>" data-particles="<?php echo $config->configuracion->particlesFooter; ?>">
+	<body data-gotop="<?php echo $config->configuracion->gotop; ?>" data-popup="<?php echo $config->configuracion->popup; ?>">
 
 		<?php if ( $config->configuracion->loading == 1 ): ?>
-		<div class="loading" id="particles-js">
+		<div class="loading">
 			<div class="loading-logo"><img src="images/logo.png" alt="Loading" class="mb-1" width="151" height="70" class="img-fluid" /><br /><p>Cargando...</p></div>
 		</div>
 		<?php endif; ?>
@@ -357,12 +357,6 @@ $config = getConfig();
 
 		<?php if ( $config->configuracion->gotop == 1 ): ?>
 		<a href="#" class="scrollup" aria-label="">&nbsp;</a>
-		<?php endif; ?>
-
-		<?php if ( $config->configuracion->loading == 1 ): ?>
-		<script>
-			particlesJS.load('particles-js', 'assets/particlesjs-config.json', function() {});
-		</script>
 		<?php endif; ?>
 
 		<?php if ( $config->configuracion->pwa == 1 ): ?>

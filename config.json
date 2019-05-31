@@ -173,8 +173,7 @@
         "gotop": 1,
         "popup": 0,
         "revolution": 1,
-        "loading": 0,
-        "particlesFooter": 0,
+        "loading": 1,
         "pwa": 1,
         "fonts": {},
         "assets": {
