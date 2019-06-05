@@ -1,7 +1,7 @@
 {
-    "name": "Landing base",
-    "short_name": "Landing Base",
-    "description": "Descripcion de la landing base",
+    "name": "Landing push",
+    "short_name": "Landing Push",
+    "description": "Descripcion de la landing push",
     "background_color": "#ffffff",
     "theme_color": "#4f3676",
     "orientation": "portrait",
