@@ -1,7 +1,26 @@
 <?php
 require_once "php/functions.php";
 $config = getConfig();
-?><!DOCTYPE html>
+
+	/*
+	require __DIR__ . '/vendor/autoload.php';
+
+	$options = array(
+		'cluster' => 'us2',
+		'useTLS' => true
+	);
+	$pusher = new Pusher\Pusher(
+		'6104738ca9ecc29b55c6',
+		'3d449381f1e24912b76d',
+		'795469',
+		$options
+	);
+
+	$data['message'] = 'hello world';
+	$pusher->trigger('my-channel', 'my-event', $data);
+	*/
+?>
+<!DOCTYPE html>
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
@@ -33,6 +52,25 @@ $config = getConfig();
 		<link rel="apple-touch-icon" href="./images/logo/logo_1024.png">
 		<link rel="apple-touch-startup-image" href="./images/logo/logo_1024.png">
 		<link rel="manifest" href="./manifest.json">
+		<?php endif; ?>
+
+		<?php if( $config->configuracion->pusher == 1 ): ?>
+		<script src="https://js.pusher.com/4.4/pusher.min.js"></script>
+		<script>
+
+			// Enable pusher logging - don't include this in production
+			Pusher.logToConsole = true;
+
+			var pusher = new Pusher('6104738ca9ecc29b55c6', {
+				cluster: 'us2',
+				forceTLS: true
+			});
+
+			var channel = pusher.subscribe('my-channel');
+			channel.bind('my-event', function(data) {
+				alert(JSON.stringify(data));
+			});
+		</script>		
 		<?php endif; ?>
 
 		<!-- FAVICONS -->

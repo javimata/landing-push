@@ -2,7 +2,7 @@
     "name": "Landing base",
     "short_name": "Landing Base",
     "description": "Descripcion de la landing base",
-    "background_color": "#2B2B2B",
+    "background_color": "#ffffff",
     "theme_color": "#4f3676",
     "orientation": "portrait",
     "display": "standalone",
